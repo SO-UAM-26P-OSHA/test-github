@@ -22,3 +22,21 @@ def restar(a: float, b: float):
         "operacion": "resta",
         "resultado": a - b
     }
+
+
+
+@app.get("/Multiplicar")
+def multiplicar(a:float, b: float):
+    return {
+	"operacion": "Multiplicacion",
+	"resultado": a * b
+    }
+
+
+
+@app.get("/Dividir")
+def dividir(a:float, b: float):
+    return {
+	"operacion": "Division",
+	"resultado": a / b
+    }
